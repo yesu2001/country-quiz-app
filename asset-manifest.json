@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/country-quiz-app/static/css/main.861cc74f.css",
+    "main.js": "/country-quiz-app/static/js/main.dba3ec2f.js",
+    "static/media/winners.svg": "/country-quiz-app/static/media/winners.d76bfdf87016eda38fd439d929ce0371.svg",
+    "static/media/background.png": "/country-quiz-app/static/media/background.41dbc5504a105eae7176.png",
+    "static/media/adventure.svg": "/country-quiz-app/static/media/adventure.182b6171bba7c99e5444500b4daec361.svg",
+    "index.html": "/country-quiz-app/index.html",
+    "main.861cc74f.css.map": "/country-quiz-app/static/css/main.861cc74f.css.map",
+    "main.dba3ec2f.js.map": "/country-quiz-app/static/js/main.dba3ec2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.861cc74f.css",
+    "static/js/main.dba3ec2f.js"
+  ]
+}
