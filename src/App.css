@@ -1,38 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: url('Images/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  transform:  translate(-100px);
+  padding-bottom: 20px;
+}
+
+img {
+  width: 140px;
+}
+
+.Question,.Result {
+  width: 464px;
+  height: 515px;
+  background: #FFFFFF;
+  border-radius: 24px;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2F527B;
+  transform: translate(0,-50px);
+}
+
+.Question img {
+  position: relative;
+  transform: translate(300px, -70px);
+}
+
+.choices {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0,-40px);
+}
+
+.choice {
+  width: 380px;
+  height: 56px;
+  margin: 10px 0;
+  background: #FFFFFF;
+  border: 2px solid rgba(96, 102, 208, 0.7);
+  border-radius: 12px;
+  color: rgba(96, 102, 208, 0.8);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+span {
+  margin-left: 30px;
+}
+
+.right {
+  width: 380px;
+  height: 56px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 2px solid #60BF88;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background: #60BF88;
+}
+
+.wrong {
+  width: 380px;
+  height: 56px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 2px solid #EA8282;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background: #EA8282;
+}
+
+.choice:hover {
+  border: 2px solid #F9A826;
+  cursor: pointer;
+  color: #ffffff;
+  background: #F9A826;
+}
+
+
+.next {
+  position: relative;
+  transform: translate(320px);
   color: white;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background: #F9A826;
+  box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+  border-radius: 12px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+
+.next:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Result, .Result>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.Result img {
+  width: 250px;
+}
+
+
+.Result p {
+  color: #1D355D;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.Result span {
+  color: #1D355D;
+  word-spacing: 2px;
+}
+
+.Result b {
+  color: #6FCF97;
+  font-size: 25px;
+}
+
+.Result > button {
+  margin-top: 20px;
+  width: 190px;
+  height: 60px;
+  border: 2px solid #1D355D;
+  border-radius: 12px;
+  color: #1D355D;
+  font-size: 20px;
 }
